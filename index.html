@@ -6,17 +6,23 @@
         <title>Welcome to acessedigitald.site</title>
         <meta name="description" content="This is the presell page for acessedigitald.site">
         
-
-<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17294102934"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'AW-17294102934');
-</script>
+  // 1. CONFIGURAÇÃO BASE (ID 34) + LINKER (Correção de Domínio)
+  gtag('config', 'AW-17294102934', {
+    'linker': {
+      'domains': ['acessedigitald.site', 'checkout.braip.com'] 
+    }
+  });
 
+  // 2. CONFIGURAÇÃO DO ID DE EVENTO (ID 15) - Essencial para o rastreamento da Braip
+  gtag('config', 'AW-17751447515');
+
+</script>
     </head>
     <body>
         <h1>Powered by https://theminerx.com</h1>
