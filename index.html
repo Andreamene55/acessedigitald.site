@@ -9,11 +9,20 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17294102934"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
 
-  gtag('config', 'AW-17294102934');
+// Tag global (conta principal, final 34)
+gtag('config', 'AW-17294102934');
+
+// Tag de conversão (final 15)
+gtag('config', 'AW-17751447515');
+
+// Evento de conversão simples (página de obrigado)
+gtag('event', 'conversion', {
+  'send_to': 'AW-17751447515/label_da_conversao'
+});
 </script>
 
 
